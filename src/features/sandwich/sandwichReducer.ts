@@ -1,22 +1,18 @@
 import Action from "./types/Action";
 import SandwichState from "./types/SandwichState";
 const initialState: SandwichState = {
-  value: 'Sandwich'
+  value: 'Sandwich:'
 };
  export default function sandwichReducer(
   state: SandwichState = initialState,
   action: Action
 ): SandwichState {
     switch (action.type) {
-        case 'addBread':
+        case 'sandwich/add':
           return { ...state, value: state.value + action.payload };
-        case 'addCheese':
-          return { ...state, value:state.value + action.payload };
-          case 'addSalami':
-            return { ...state, value:state.value + action.payload };
-            case 'handleClear':
-            return { ...state, value:  action.payload };
-        default:
+          case 'clear':
+          return { ...state, value:  action.payload };
+            default:
           return state;
 };
 }
