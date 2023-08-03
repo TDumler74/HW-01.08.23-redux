@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
+ 
 import { uid } from 'uid';
 import Action from './types/Action';
 import TasksState from './types/TasksState';

@@ -1,9 +1,9 @@
-import React from 'react';
 import './App.css';
 import Counter from './features/counter/Counter';
 import Sandwich from './features/sandwich/Sandwich';
 import Tasks from './features/tasks/Tasks';
 import TaskCreation from './features/tasks/TaskCreation';
+import { Movie } from '@mui/icons-material';
 
 function App():JSX.Element {
   return (
@@ -12,6 +12,7 @@ function App():JSX.Element {
      <Sandwich />
      <Tasks />
      <TaskCreation />
+     <Movie />
     </div>
   );
 }
