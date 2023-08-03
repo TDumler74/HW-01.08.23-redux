@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store';
-import styles from './Sandwich.module.css';
+
 
 export default function Sandwich():JSX.Element {
     
@@ -19,13 +19,13 @@ export default function Sandwich():JSX.Element {
      }
     const sandwich = useSelector((state: RootState) => state.sandwich.value);
   return (
-   <div className={styles.container}>
-     <h1>Sandwich </h1>
-     <p className={styles.obj}>{sandwich}</p>
-    <button className={styles.button} type="button" onClick={handleAddBread} >Add bread</button> 
-    <button className={styles.button} type="button" onClick={handleAddCheese}>Add cheese</button>   
-    <button className={styles.button} type="button" onClick={handleAddSalami} >Add salami</button>
-    <button className={styles.button} type="button" onClick={handleClear} >Reset</button>
+   <div >
+     <h1>Sandwich: </h1>
+     <p  >{sandwich}</p>
+    <button  type="button" onClick={handleAddBread} >Add bread</button> 
+    <button type="button" onClick={handleAddCheese}>Add cheese</button>   
+    <button type="button" onClick={handleAddSalami} >Add salami</button>
+    <button type="button" onClick={handleClear} >Reset</button>
   </div>
 );
 } 
